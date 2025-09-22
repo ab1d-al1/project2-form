@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HATSS - AI Avatar Tutors</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+<canvas id="three-canvas"></canvas>
+
+<section class="hero">
+  <div class="logo">HATSS</div>
+  <div class="tagline">Revolutionary AI Avatar Tutors - Learn from Humanlike Mentors</div>
+  <button class="cta-button" onclick="document.querySelector('.waitlist-section').scrollIntoView({behavior:'smooth'})">Join Early Access</button>
+  <div class="scroll-indicator">↓ Scroll to explore</div>
+</section>
+
+<section class="waitlist-section">
+  <div class="form-container">
+    <form id="waitlist-form">
+      <input type="text" class="form-input" placeholder="Full Name" required>
+      <input type="email" class="form-input" placeholder="Email Address" required>
+      <input type="text" class="form-input" placeholder="Subject you want to learn?">
+      <button type="submit" class="submit-btn">Join Waitlist</button>
+    </form>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
